@@ -4,7 +4,7 @@ Shop page : https://shop.nunomo.com/products/qun-pocket-synthesizer
 
 [Wiki](https://github.com/raspy135/Qun-synthesizer/wiki) for ideas and tips
 
-[patches](./patches) for tone patches
+[Patches](./patches) for tone patches
 
 [Issues](https://github.com/raspy135/Qun-synthesizer/issues) : Report issues when you have problems or questions.
 
@@ -21,10 +21,10 @@ Qun-synthesizer is an analog modeling synthesizer engine for ESP32 Lyrat, worked
 ![qun_synth](./manual_images/qun_synth.jpg)
 
 ## Overview
-- Connectivity: Standard MIDI(TRS A type), BLE MIDI, UART MIDI(Supports MAC OS X and Windows through my SerialMIDI https://github.com/raspy135/serialmidi .
+- Connectivity: Standard MIDI (TRS A type), BLE MIDI, MIDI UART sSupports macOS and Windows through my SerialMIDI https://github.com/raspy135/serialmidi .
 
 * ESP32 Lyrat
-  * Originally designed for smart speaker. Qun synthesizer uses it to achieve affordable pricing. Since the board is not designed for Synthesizer, it has some limitations (e.g. it has USB, but it's not typical USB MIDI, it's UART MIDI)
+  * Originally designed for smart speaker. Qun synthesizer uses it to achieve affordable pricing. Since the board is not designed for Synthesizer, it has some limitations (e.g. it has USB, but it's not typical USB MIDI, it's MIDI UART)
 
 * **Analog Modeling engine**
   * The analog modeling engine is **an original, made from scratch**. It uses advanced algorithms for great organic sound. The engine is not a copy of one of classic synths, it is designed to make a modern sound.
@@ -62,10 +62,10 @@ Qun-synthesizer is an analog modeling synthesizer engine for ESP32 Lyrat, worked
 ## CONNECTIONS
 
 * Power : Use a good quality USB power supply. Connect the USB cable to `POWER` labeled USB port.
-* BLE MIDI : IOS or Mac OS X are supported. Windows are NOT supported. BLE MIDI has 15 to 20ms latency in general, it is limitation of BLE spec. For lower latency, use MIDI or UART MIDI.
+* BLE MIDI : IOS or Mac OS X are supported. Windows are NOT supported. BLE MIDI has 15 to 20ms latency in general, it is limitation of BLE spec. For lower latency, use MIDI or  MIDI UART.
 * MIDI : Use **TRS A** MIDI adapter to connect MIDI cables. TRS A type adapter is the same as KORG, AKAI and MAKE NOISE's adapter.
-* UART MIDI: You can use UART MIDI instead of traditional MIDI interface. It requires special program and MIDI bridges (e.g. LoopMIDI in Windows, IAC for Mac) but once you set them up then you can use it like USB MIDI. Connect Lyrat's `UART` labeled USB to your computer. You may need to install UART driver(https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
-	* For detail of UART MIDI, please refer https://github.com/raspy135/serialmidi project. Set baud rate to MIDI's traditional 31250bps.
+* MIDI UART: You can use MIDI UART instead of traditional MIDI interface. It requires special program and MIDI bridges (e.g. LoopMIDI in Windows, IAC for Mac) but once you set them up then you can use it like USB MIDI. Connect Lyrat's `UART` labeled USB to your computer. You may need to install UART driver(https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+	* For detail of MIDI UART, please refer https://github.com/raspy135/serialmidi project. Set baud rate to MIDI's traditional 31250bps.
 * The synthesizer can process external audio signals. It also has microphones.
 * LINE IN and PHONE OUT is located at right side. The output is stereo but right and left channel will put the same signal.
 
@@ -632,7 +632,7 @@ If it starts making ground loop noise, use separated power supply and use standa
 	* Check "Device Index" and "Number of Devices" in system menu. If the Device Index is 2 or more, and use it as primary device, then it may cause no sound.
 	* Check MIDI Receiving status. To toggle it, press "Mode" button on Lyrat board (next to Rec button).
 	
-* BLE trouble with Windows: We don’t support WINDOWS for BLE MIDI connection. Please use UART MIDI or MIDI TRS A.
+* BLE trouble with Windows: We don’t support WINDOWS for BLE MIDI connection. Please use MIDI UART or MIDI TRS A.
 
 * A Noise when you connect multiple devices (chained audio)
 	

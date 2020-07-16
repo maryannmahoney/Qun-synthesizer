@@ -1,4 +1,4 @@
-## Links and Information
+﻿## Links and Information
 
 Shop page : https://shop.nunomo.com/products/qun-pocket-synthesizer
 
@@ -475,7 +475,7 @@ Right-filled circle : One note in the step but it plays at the second half.
 
 Full-filled circle : Two notes in the step (1/16th)
 
-Striped circle : 3 notes in the step (triplet)
+Striped circle : 3 notes in the step (triplet).
 
 ### PLY:SEQ BANK
 The sequencer has 7 banks, you can switch the bank while playing.
@@ -483,7 +483,7 @@ This will not be saved unless you press button 8.
 
 Button 1 to 7: Change bank 1 to 7
 
-Pressing Button 1 to 7 and changing dial : Copy bank to other bank. It's useful when you want to make a new bank by using existing data. If you want to cancel the operation, turn to the end, then "NONE" will be indicated as the destination.
+Pressing Button 1 to 7 and changing dial: Copy bank to other bank. It's useful when you want to make a new bank by using existing data. If you want to cancel the operation, turn to the end, then "NONE" will be indicated as the destination.
 
 Button 8: Save all banks to flash memory. Otherwise sequencer changes will not be saved when power is off.
 
